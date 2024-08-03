@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <!-- chatGPT style code for sidebar working -->
+   <style>
+      .transition-transform {
+          transition: transform 0.3s ease;
+      }
+  </style>
+  <!-- chatGPT style code for sidebar working -->
+</head>
+<body class="bg-gray-200 ">
+
+
+<!-- NAVBAR STARTS -->
+ <div class="flex items-center justify-between bg-white py-6 px-4">
+  <div class="flex-1 flex">
+      <ul class="flex space-x-8">
+          <li>
+              <button id="toggle-btn" class="bg-gray-400 text-white px-5 py-2 rounded-lg">
+                  ☰
+              </button>
+          </li>
+          <li class="flex items-center font-bold text-black px-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+              <span class="material-symbols-outlined mr-2">home</span>
+              <a href="./index.html">Home</a>
+          </li>
+          <li class="flex items-center font-bold text-black px-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+              <span class="material-symbols-outlined mr-2">person</span>
+              <a href="./staff.html">Staff</a>
+          </li>
+      </ul>
+  </div>
+</div>
+ <!-- NAVBAR ENDS -->
+
+ 
+<!-- Sidebar starts -->
+<div id="sidebar" class="fixed top-0 left-0 w-64 h-screen bg-gray-800 text-white transition-transform transform -translate-x-full">
+  <div class="p-4">
+      <h1 class="italic text-4xl font-bold">A-z</h1>
+  </div>
+  <nav class="mt-4">
+      <ul>
+          <li class="p-4 hover:bg-gray-700 font-bold"><a href="./index.html">Home</a></li>
+          <li class="p-4 hover:bg-gray-700 font-bold"><a href="./staff.html">staff</a></li>
+      </ul>
+  </nav>
+</div>
+<!-- Sidebar Ends-->
+
+    
+      
+ <!-- //side text & HeadLines starts -->
+           <div class="text text-black">
+          <div class="address my-3 mx-11 text-sm">
+             <p class="italic">Quator/service/center/best cleaning service</p>
+          </div>
+          <div class=" flex font-bold  my-4 text-black justify-center headline text-3xl ">
+                 Premier Home Cleaning
+          </div>
+          <di class="flex justify-center items-center space-x-2">
+          <div class="flex justify-center">
+              <p class="italic">• Top Experts</p>
+          </div>
+          <div class="flex justify-center">
+            <p class="italic">• pocket friendly Rates</p>
+          </di>
+          <!-- <div class="flex justify-center">
+            <p class="italic">• premier Home cleaning</p>
+          </di> -->
+        </div>
+         </div>  
+   <!-- //side text & HeadLines Ends -->
+      
+      
+  <!-- calander starts from here -->
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-4 my-4">
+        <div class="flex justify-between items-center mb-4">
+            <button id="prev-month" class="text-blue-500">&lt; Prev</button>
+            <h2 id="current-month" class="text-xl font-bold">August 2024</h2>
+            <button id="next-month" class="text-blue-500">Next &gt;</button>
+        </div>
+        <div class="grid grid-cols-7 gap-4">
+            <!-- Days of the week -->
+            <div class="text-center font-bold">Sun</div>
+            <div class="text-center font-bold">Mon</div>
+            <div class="text-center font-bold">Tue</div>
+            <div class="text-center font-bold">Wed</div>
+            <div class="text-center font-bold">Thu</div>
+            <div class="text-center font-bold">Fri</div>
+            <div class="text-center font-bold">Sat</div>
+            <!-- Dates of the month -->
+            <div class="calendar-day text-center p-2 bg-gray-200 rounded cursor-pointer hover:bg-gray-500">1</div>
+            <div class="calendar-day text-center p-2 bg-gray-200 rounded cursor-pointer hover:bg-gray-500">2</div>
+            <div class="calendar-day text-center p-2 bg-gray-200 rounded cursor-pointer  hover:bg-gray-500">3</div>
+            <div class="calendar-day text-center p-2 bg-gray-200 rounded cursor-pointer  hover:bg-gray-500">4</div>
+            <div class="calendar-day text-center p-2 bg-gray-200 rounded cursor-pointer  hover:bg-gray-500">5</div>
+            <div class="calendar-day text-center p-2 bg-gray-200 rounded cursor-pointer  hover:bg-gray-500">6</div>
+            <div class="calendar-day text-center p-2 bg-gray-200 rounded cursor-pointer hover:bg-gray-500">7</div>
+        </div>
+    </div>
+  <!-- calander Ends from here -->
+
+
+    <!-- Appoiment button starts here -->
+     <div class="flex justify-center items-center">
+        <button class="bg-blue-300 hover:bg-gray-500 text-white font-bold py-4 px-6  rounded-full ">
+            <span class="material-symbols-outlined">
+                <a href="./appoiments.html">Add</a>
+            </span>
+          </button>
+     </div>
+     <!-- Appoiment button Endss here -->
+
+
+    <!-- Appoiments list starts from here -->
+  <div class="max-w-4xl mx-auto appoiments_details text-black text-start p-4 my-5">
+         <ul>
+            <div id="datepicker-inline" inline-datepicker data-date="02/25/2024">day/Month/year</div>
+            <li class="flex rounded flex-col details bg-white p-4">Name of the client & check from here.
+              <div class="flex justify-end items-end w-fit rounded-full bg-green-400">✅</div>
+            </li>
+           
+            <li class="h-4"></li>
+            <li class="flex flex-col details bg-white p-4">Nam of client & check from here.
+              <div class="flex justify-end items-end w-fit rounded-full bg-gray-300"></div>
+            </li>
+        </ul>
+    </div>  
+    <!-- Appoiments code Ends here -->
+
+
+  <!-- income code starts -->
+   <div class="text-center my-5  text-gray-800 font-bold">
+    <p class="italic">This weeks income $</p>
+   </div>
+ <div class="flex justify-center items-center">
+  <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover" class="text-black bg-gray-300  hover:bg-white mb-8 focus:ring-4 focus:outline-none focus:ring-blue-300 font-bold rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">Income<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+    </button>
+</div>
+    <!-- Dropdown menu -->
+    <div id="dropdownHover" class=" items-center z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Week income $ :</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Month income $:</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">yearly income $:</a>
+          </li>
+         
+        </ul>
+    </div>
+  <!-- income code ends starts -->
+   
+
+  <!-- footer code starts here -->
+   <footer class="bg-white w-full py-6">
+      <p class="italic text-center text-sm text-gray-500 font-bold">Copyright 2024 A-z.All rights reserved.</p>
+   </footer>
+   <!-- footer code ends here -->
+
+
+<!-- script codes for sidebar and income dropdown starts here  -->
+  <script>
+    // Sidebar toggle
+    document.getElementById('toggle-btn').addEventListener('click', function() {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('-translate-x-full');
+    });
+
+    // Dropdown menu toggle
+    document.getElementById('dropdownHoverButton').addEventListener('click', function(event) {
+        event.stopPropagation(); // Prevents the click event from propagating to the document
+        const dropdown = document.getElementById('dropdownHover');
+        dropdown.classList.toggle('hidden');
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('dropdownHover');
+        if (!dropdown.contains(event.target) && !document.getElementById('dropdownHoverButton').contains(event.target)) {
+            dropdown.classList.add('hidden');
+        }
+    });
+</script>
+
+<!-- script codes for sidebar and income dropdown ends here  -->
+
+
+</body>
+</html>

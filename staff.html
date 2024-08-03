@@ -1,0 +1,160 @@
+ <link rel="stylesheet" href="./src/output.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+<!--  NAVBAR STARTS --> 
+<div class="flex items-center justify-between bg-white py-6 px-4">
+    <div class="flex-1 flex">
+        <ul class="flex space-x-8">
+            <li>
+                <button id="toggle-btn" class="bg-gray-400 text-white px-5 py-2 rounded-lg">
+                    ☰
+                </button>
+            </li>
+            <li class="flex items-center font-bold text-black px-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+                <span class="material-symbols-outlined mr-2">home</span>
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="flex items-center font-bold text-black px-3 hover:bg-gray-200 rounded-lg cursor-pointer">
+                <span class="material-symbols-outlined mr-2">person</span>
+                <a href="./staff.html">Staff</a>
+            </li>
+        </ul>
+    </div>
+  </div>
+   <!-- NAVBAR ENDS -->
+  
+  
+   <!-- staff Body starts from here  -->
+<body class="bg-gray-100">
+<div class="container mx-auto p-11">
+
+    <!-- Button for importing new staff -->
+<div class="my-2 gap-3">
+    <button class="bg-blue-300 hover:bg-gray-500 text-white font-bold py-2 px-11 rounded-md flex items-center space-x-3">
+        <span class="material-symbols-outlined">
+          person
+        </span>
+        <span>staff</span>
+    </button>
+</div>
+<!-- End of button for importing new staff -->
+
+
+ <!-- staff table starts here --> 
+    <div class="text-start font-bold text-3xl">
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="text-black w-full text-sm text-left rtl:text-right  dark:text-gray-400">
+                <thead class=" border borderx-x-black text-xs text-gray-700 uppercase bg-gray-100 dark:bg-gray-100 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Staff
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            WorkTime
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            status
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Attendence
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Action
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="text-black">
+                    <tr class="odd:bg-white odd:dark:bg-gray-100 even:bg-gray-50 even:dark:bg-gray-100 border-b dark:border-gray-100">
+                        <th scope="row" class="px-6 py-4 font-medium text-black whitespace-nowrap dark:text-black">
+                            Malini
+                        </th>
+                        <td class="px-6 py-4">
+                            Mor-eve
+                        </td>
+                        <td class="px-6 py-4">
+                            completed
+                        </td>
+                        <td class="px-6 py-4">
+
+                            <span class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                Available
+                            </span>
+                            
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500  hover:bg-gray-300 rounded-full p-3">Remove</a>
+                        </td>
+                    </tr>
+                    <tr class="odd:bg-white odd:dark:bg-gray-100 even:bg-gray-50 even:dark:bg-gray-100 border-b dark:border-gray-100">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                            Ashok
+                        </th>
+                        <td class="px-6 py-4">
+                            Mor-eve
+                        </td>
+                        <td class="px-6 py-4">
+                            3 hours left
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                Available
+                            </span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500  hover:bg-gray-300 rounded-full p-3">Remove</a>
+                        </td>
+                    </tr>
+                    <tr class="odd:bg-white odd:dark:bg-gray-100 even:bg-gray-50 even:dark:bg-gray-100 border-b dark:border-gray-100">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                            clara
+                        </th>
+                        <td class="px-6 py-4">
+                            Mor-eve
+                        </td>
+                        <td class="px-6 py-4">
+                            4 hours left
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="inline-flex items-center bg-green-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-red-800 dark:text-white">
+                                <span class="w-2 h-2 me-1 bg-red-300 rounded-full"></span>
+                                unvailable
+                            </span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500  hover:bg-gray-300 rounded-full p-3">Remove</a>
+                        </td>
+                    </tr>
+                    <tr class="odd:bg-white odd:dark:bg-gray-100 even:bg-gray-50 even:dark:bg-gray-100 border-b dark:border-gray-100">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-black">
+                            peter
+                        </th>
+                        <td class="px-6 py-4">
+                            eve-eve
+                        </td>
+                        <td class="px-6 py-4">
+                            completed
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="inline-flex items-center bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                                <span class="w-2 h-2 me-1 bg-green-500 rounded-full"></span>
+                                Available
+                            </span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:bg-gray-300 rounded-full p-3">Remove</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+         <!-- staff table ends here  -->
+    </div>
+</div>
+
+</body> 
+
+<!-- staff Body starts from here  -->
